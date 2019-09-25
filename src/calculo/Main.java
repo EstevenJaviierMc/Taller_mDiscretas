@@ -32,17 +32,29 @@ public class Main {
         double A = L * L;
         double P = 4 * L;
 
-        System.out.println("Area y perimetro respectivamente: " + A + " - " + P);
+//        System.out.println("Area y perimetro respectivamente: " + A + " - " + P);
         System.out.println("");
 
-        double totalP = P;
-        double totalA = A;
-        //double nuevoLado = 0;
+        double totalP = 0;
+        double totalA = 0;
+
         for (int i = 0; i < 7; i++) {
-            totalP = totalP + Perimetro(P);
-            totalA = totalA + Area(A);
+            //Area de los cuadros
+            System.out.println(A + " _");
+            totalA = totalA + A;
+            A = A - A / 2;
+            
         }
-        //System.out.println("El area y perimetro respectivamente del cuadrado interno es: " + Area(A) + " - " + Perimetro(P));
+        
+        System.out.println("");
+        
+        for (int i = 0; i < 7; i++) {
+            //Perimetro de los cuadros
+            System.out.println(P + " _");
+            totalP = totalP + P;
+            P = (Math.sqrt(2)*P)/2;
+        }
+        System.out.println(totalP);
 
         System.out.println("");
         System.out.println("La suma del área de todos los cuadros es: " + totalA);
