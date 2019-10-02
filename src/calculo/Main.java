@@ -38,21 +38,21 @@ public class Main {
         double totalP = 0;
         double totalA = 0;
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 90; i++) {
             //Area de los cuadros
             System.out.println(A + " _");
             totalA = totalA + A;
-            A = A - A / 2;
+            A = Area(A);
             
         }
         
         System.out.println("");
         
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 97687; i++) {
             //Perimetro de los cuadros
             System.out.println(P + " _");
             totalP = totalP + P;
-            P = (Math.sqrt(2)*P)/2;
+            P = Perimetro(P);
         }
         System.out.println(totalP);
 
